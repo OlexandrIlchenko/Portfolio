@@ -1,0 +1,125 @@
+.all2 {
+	max-width: 940px;
+	margin: 0 auto;
+	padding-left: 20px;
+}
+.all2 .recent {
+	float: left;
+	margin-bottom: 10px;
+	font-size: 15px; 
+	color: #464646;
+}
+.all2 #controls{
+	float: right;
+}
+.all2 label {
+	display: inline-block;
+	width: 23px;
+	height: 5px;
+	background: #bababa;
+	cursor: pointer;
+}
+.all2 hr {
+	clear: both;
+	border: none;
+	background-image: url(../img/divider.png);
+	height: 6px;
+	margin-bottom: 32px;
+}
+.all2 input {
+	display: none;
+}
+.all2 .text {
+	width: 21%;
+	float: left;
+	padding-right: 3%;
+	font-size: 12px;
+	line-height: 16px;
+	color: #333333;
+}
+.all2 p:first-child {
+	margin-bottom: 14px;
+	color: #8e8e8e;
+}
+.all2 #slider {
+	width: 79%;
+	float: right;
+	overflow: hidden;
+}
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+
+
+.all2 .portfolio {
+	float: left;
+	margin: 0 0 3% 3%;
+}
+.all2 .opacity {
+	padding-top: 50px;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,.75);
+	opacity: 0;
+	transition: opacity ease .2s;
+}
+.all2 .opacity:hover {
+	opacity: 1;
+}
+.all2 .glas {
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+	width: 70px;
+	height: 70px;
+	border-radius: 5px;
+	background-color: rgba(255,255,255,.4);
+}
+.all2 .glas img {
+	padding-top: 19px;
+}
+.all2 .portfolio .stat {
+	font-size: 12px;
+	color: #fff;
+	margin-top: 37px;
+}
+.all2 .portfolio .views,
+.all2 .portfolio .likes,
+.all2 .portfolio .comments {
+	display: inline-block;
+	margin-left: 20px;
+	margin-right: 10px;
+}
+
+
+
+
+
+.all2 .container {
+	width: 300%;
+	transition: all ease 1s;
+}
+.all2 .section1,
+.all2 .section2,
+.all2 .section3 {
+	float: left;
+	max-width: 33.3333333333%;
+}
+.all2 #section1:checked ~ #controls label[for="section1"],
+.all2 #section2:checked ~ #controls label[for="section2"],
+.all2 #section3:checked ~ #controls label[for="section3"] {
+	background: #dcdcdc;
+}
+.all2 #section1:checked ~ #slider .container {
+	margin-left: 0%;
+}
+.all2 #section2:checked ~ #slider .container {
+	margin-left: -100%;
+}
+.all2 #section3:checked ~ #slider .container {
+	margin-left: -200%;
+}

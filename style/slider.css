@@ -1,0 +1,94 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+.all {
+	max-width: 940px;
+	margin: 0 auto;
+}
+.all input {
+	display: none;
+}
+.all #slider {
+	overflow: hidden;
+}
+.all .container {
+	width: 400%;
+	margin-left: 0%;
+	transition: all ease 1s;
+}
+.all .slides {
+	float: left;
+	width: 25%;
+}
+.all .text {
+	float: left;
+	width: 50%;
+}
+.all img {
+	float: right;
+	width: 50%;
+}
+.all .clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.all #controls {
+	/*padding-top: 30px;*/
+	text-align: right;
+}
+.all label {
+	display: inline-block;
+	cursor: pointer;
+	width: 23px;
+	height: 5px;
+	background: #888;
+}
+#img1:checked ~ #controls label[for="img1"],
+#img2:checked ~ #controls label[for="img2"],
+#img3:checked ~ #controls label[for="img3"],
+#img4:checked ~ #controls label[for="img4"] {
+	background: #BEBEBE;
+}
+#img1:checked ~ #slider .container {
+	margin-left: 0;
+}
+#img2:checked ~ #slider .container {
+	margin-left: -100%;
+}
+#img3:checked ~ #slider .container {
+	margin-left: -200%;
+}
+#img4:checked ~ #slider .container {
+	margin-left: -300%;
+}
+.all .text {
+	/*color: #FFF;*/
+}
+.all h2 {
+	margin: 35px 0;
+	font-size: 24px;
+	line-height: 28px;
+	font-weight: bold;
+}
+.all p {
+	margin: 25px 0;
+	font-size: 12px;
+	line-height: 18px;
+	font-weight: normal;
+}
+.all a {
+	display: block;
+	font-size: 13px;
+	line-height: 35px;
+	font-weight: bold;
+	text-align: center;
+	color: #fff;
+	width: 142px;
+	height: 35px;
+	text-decoration: none;
+	background-image: linear-gradient(to top, #909090, #cccccc);
+    border-radius: 3px;
+}
