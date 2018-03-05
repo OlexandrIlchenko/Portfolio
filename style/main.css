@@ -5,9 +5,6 @@ body {background-color: #aaa;}
 	padding-top: 30px;
 	padding-bottom: 80px;
 }
-main {
-	background: #fff;
-}
 .footer {
 	clear: both;
 }
@@ -48,13 +45,18 @@ main {
 }
 .search input {
 	font-size: 12px;
-	width: 150px;
+	width: 120px;
 	height: 25px;
 	margin-left: 16px;
+	padding-left: 30px;
 	background-color: #2f2f2f;
 	border: none;
 	border-radius: 15px;
 	box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.3), 0px 1px 0px 0px rgba(46, 46, 46, 0.6);
+}
+.search input:focus {
+	outline: none;
+	
 }
 .all {
 	clear: both;
@@ -69,12 +71,20 @@ article {
 	max-width: 940px;
 	margin: 0 auto;
 }
+main {
+	background-color: #fff;
+	/*z-index: 10;*/
+}
 main .section {
 	margin: -65px 0 65px 20px;
 	padding: 25px;
 	float: left;
+	z-index: 0;
 	width: 220px;
-	background: #fff;
+	background-color: #fff;
+	background-size: cover;
+	position: relative;
+  	/*box-shadow: 100px 0px 30px -105px black, -100px 0px 30px -105px black;*/
 }
 main .section:first-child {
 	margin-left: 0;
@@ -83,15 +93,24 @@ main .section hr {
 	border: none;
 	background-image: url(../img/divider.png);
 	height: 5px;
-	margin: 0 0 12 0;
+	margin: 0 0 12px 0;
 }
-/*main .section::after {
-	content:"";
-	background-image: linear-gradient(to top, #fff, #000);
-	z-index: 11;
-	width: 100px;
-	height: 100px;
-}*/
+main .section::after {
+	display: block;
+	content: "";
+	background-image: linear-gradient(to bottom, 
+		rgba(255,255,255,1) 0%, 
+		rgba(0,0,0,1) 50%, 
+		rgba(255,255,255,1) 100%);
+	background-size: cover;
+	z-index: -1;
+	position: absolute;
+	top: 0%;
+	left: -2%;
+	width: 104%;
+	height: 100%;
+	/*background: rgba(0, 0, 0, 1);*/
+}
 
 
 
