@@ -56,7 +56,6 @@ body {background-color: #aaa;}
 }
 .search input:focus {
 	outline: none;
-	
 }
 .all {
 	clear: both;
@@ -67,41 +66,35 @@ body > hr {
 	background-color: #242424;
 	margin: 0 auto;
 }
+main {
+	background-color: #fff;
+	z-index: 0;
+	position: relative;
+}
 article {
 	max-width: 940px;
 	margin: 0 auto;
-}
-main {
-	background-color: #fff;
-	/*z-index: 10;*/
 }
 main .section {
 	margin: -65px 0 65px 20px;
 	padding: 25px;
 	float: left;
-	z-index: 0;
+	z-index: auto;
 	width: 220px;
 	background-color: #fff;
 	background-size: cover;
 	position: relative;
-  	/*box-shadow: 100px 0px 30px -105px black, -100px 0px 30px -105px black;*/
 }
 main .section:first-child {
 	margin-left: 0;
-}
-main .section hr {
-	border: none;
-	background-image: url(../img/divider.png);
-	height: 5px;
-	margin: 0 0 12px 0;
 }
 main .section::after {
 	display: block;
 	content: "";
 	background-image: linear-gradient(to bottom, 
-		rgba(255,255,255,1) 0%, 
+		rgba(255,255,255,1) 20%, 
 		rgba(0,0,0,1) 50%, 
-		rgba(255,255,255,1) 100%);
+		rgba(255,255,255,1) 80%);
 	background-size: cover;
 	z-index: -1;
 	position: absolute;
@@ -109,11 +102,15 @@ main .section::after {
 	left: -2%;
 	width: 104%;
 	height: 100%;
-	/*background: rgba(0, 0, 0, 1);*/
 }
 
 
-
+main .section hr {
+	border: none;
+	background-image: url(../img/divider.png);
+	height: 5px;
+	margin: 0 0 12px 0;
+}
 main .section h3 {
 	font-size: 15px;
 	color: #171717;
