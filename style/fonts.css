@@ -1,0 +1,30 @@
+@font-face {
+	font-family: "Ballpark";
+	src: url("../fonts/Ballpark/hinted-BallparkWeiner.eot");
+	src: url("../fonts/Ballpark/hinted-BallparkWeiner.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/Ballpark/hinted-BallparkWeiner.woff") format("woff"),
+	url("../fonts/Ballpark/hinted-BallparkWeiner.woff2") format("woff2"),
+	url("../fonts/Ballpark/hinted-BallparkWeiner.ttf") format("truetype"),
+	url("../fonts/Ballpark/hinted-BallparkWeiner.svg") format("svg");
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: "HelveticaNeue-Bold";
+	src: url("../fonts/HelveticaNeue-Bold/HelveticaNeue-Bold.eot");
+	src: url("../fonts/HelveticaNeue-Bold/HelveticaNeue-Bold.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/HelveticaNeue-Bold/HelveticaNeue-Bold.woff") format("woff"),
+	url("../fonts/HelveticaNeue-Bold/HelveticaNeue-Bold.ttf") format("truetype"),
+	url("../fonts/HelveticaNeue-Bold/HelveticaNeue-Bold.svg") format("svg");
+	font-style: normal;
+	font-weight: bold;
+}
+@font-face {
+	font-family: "HelveticaRegular";
+	src: url("../fonts/HelveticaRegular/HelveticaRegular.eot");
+	src: url("../fonts/HelveticaRegular/HelveticaRegular.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/HelveticaRegular/HelveticaRegular.woff") format("woff"),
+	url("../fonts/HelveticaRegular/HelveticaRegular.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}

@@ -6,6 +6,7 @@
 .all {
 	max-width: 940px;
 	margin: 0 auto;
+	transition: all 1s ease-out;
 }
 .all input {
 	display: none;
@@ -36,7 +37,6 @@
     clear: both;
 }
 .all #controls {
-	/*padding-top: 30px;*/
 	text-align: right;
 }
 .all label {
@@ -64,20 +64,19 @@
 #img4:checked ~ #slider .container {
 	margin-left: -300%;
 }
-.all .text {
-	/*color: #FFF;*/
-}
 .all h2 {
 	margin: 35px 0;
 	font-size: 24px;
 	line-height: 28px;
 	font-weight: bold;
+	font-family: HelveticaNeue-Bold;
 }
 .all p {
 	margin: 25px 0;
 	font-size: 12px;
 	line-height: 18px;
 	font-weight: normal;
+	font-family: HelveticaRegular;
 }
 .all a {
 	display: block;
@@ -91,4 +90,5 @@
 	text-decoration: none;
 	background-image: linear-gradient(to top, #909090, #cccccc);
     border-radius: 3px;
+    font-family: HelveticaNeue-Bold;
 }

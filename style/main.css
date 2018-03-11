@@ -17,6 +17,8 @@ body {background-color: #aaa;}
 	float: left;
 	margin: 0;
 	font-size: 36px;
+	font-weight: normal;
+	font-family: ballpark, Magneto, fantasy;
 }
 .logo a {
 	color: #e0e0e0;
@@ -24,24 +26,44 @@ body {background-color: #aaa;}
 }
 .nav {
 	float: right;
+	font-weight: bold;
+	font-family: HelveticaNeue-Bold, sans-serif;
 }
 .nav a {
 	display: inline-block;
 	color: #e8e8e8;
 	text-decoration: none;
-	padding: 10px 20px 10px 16px;
-	background-image: linear-gradient(0deg, rgba(37,46,52,0), rgba(37,46,52,0.9) 50%, rgba(37,46,52,0)), linear-gradient(0deg, rgba(255,255,255,0), rgba(255,255,255,0.2) 50%, rgba(255,255,255,0));
+	padding: 0px 20px 0px 16px;
+	background-image:
+	linear-gradient(0deg, rgba(37,46,52,0), rgba(37,46,52,0.9) 50%, rgba(37,46,52,0)),
+	linear-gradient(0deg, rgba(255,255,255,0), rgba(255,255,255,0.2) 50%, rgba(255,255,255,0));
     background-repeat: no-repeat, no-repeat;
     background-position: 100% 50%, 100% 50%;
     background-size: 1px 100%, 1px 100%;
     background-origin: padding-box, border-box;
     border-right: 1px solid transparent;
 	font-size: 12px;
-	line-height: 21px;
+	line-height: 30px;
+}
+.nav a:nth-child(1) div {
+	padding: 0 15px;
+	background-color: #2f2f2f;
+	line-height: 30px;
+	border-radius: 4px;
+	box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.3), 0px 1px 0px 0px rgba(46, 46, 46, 0.6);
 }
 .nav nav,
 .nav .search {
 	display: inline-block;
+	position: relative;
+}
+.nav .glass {
+	position: absolute;
+	top: 7px;
+	left: 23px;
+	width: 15px;
+	height: 15px;
+	background: url(../IMG/mag_glass.png) no-repeat;
 }
 .search input {
 	font-size: 12px;
@@ -76,13 +98,12 @@ article {
 	margin: 0 auto;
 }
 main .section {
-	margin: -65px 0 65px 20px;
+	margin: -65px 0 65px 2%;
 	padding: 25px;
 	float: left;
 	z-index: auto;
-	width: 220px;
+	width: 23.5%;
 	background-color: #fff;
-	background-size: cover;
 	position: relative;
 }
 main .section:first-child {
@@ -101,8 +122,6 @@ main .section::after {
 	width: 102%;
 	height: 100%;
 }
-
-
 main .section hr {
 	border: none;
 	background-image: url(../img/divider.png);
@@ -110,27 +129,34 @@ main .section hr {
 	margin: 0 0 12px 0;
 }
 main .section h3 {
+	white-space: nowrap;
 	font-size: 15px;
 	color: #171717;
 	padding: 0 0 22 0;
+	font-weight: bold;
+	font-family: "HelveticaNeue-Bold", sans-serif;
 }
 main .section p:first-of-type {
 	font-size: 12px;
 	color: #8e8e8e;
 	line-height: 16px;
 	padding: 0 0 12 0;
+	font-family: "HelveticaRegular", sans-serif;
 }
 main .section p:last-of-type {
 	font-size: 12px;
 	color: #333333;
 	line-height: 16px;
 	padding: 0 0 32 0;
+	font-family: "HelveticaRegular", sans-serif;
 }
 main .section a {
 	text-decoration: none;
 	font-size: 12px;
 	color: #333333;
 	line-height: 16px;
+	font-weight: bold;
+	font-family: "HelveticaNeue-Bold", sans-serif;
 }
 .footer {
 	background: url(../IMG/header_bg.png);
@@ -142,18 +168,19 @@ main .section a {
 }
 .footer .section {
 	float: left;
-	width: 220px;
-	margin: 0 0 0 20px;
+	width: 23.5%;
+	margin: 0 0 30px 2%;
 	color: #fff;
 }
 .footer .about {
-	margin: 0;
+	margin-left: 0;
 }
 .footer .section h3 {
 	margin: 0 0 20px 0;
 	font-size: 16px;
-	font-weight: 600;
 	line-height: 14px;
+	font-weight: bold;
+	font-family: "HelveticaNeue-Bold", sans-serif;
 }
 .footer .section hr {
 	border: none;
@@ -166,6 +193,7 @@ main .section a {
 	margin-top: 15px;
 	font-size: 12px;
 	line-height: 14px;
+	font-family: "HelveticaRegular", sans-serif;
 }
 .footer .section a {
 	color: #999999;
@@ -176,6 +204,7 @@ main .section a {
 	padding: 8px 0;
 	font-size: 12px;
 	line-height: 14px;
+	font-family: "HelveticaRegular", sans-serif;
 }
 .footer .section ul {
 	list-style: none;
@@ -197,6 +226,7 @@ main .section a {
 }
 footer {
 	background: url(../IMG/footer_bg.png);
+	font-family: "HelveticaRegular", sans-serif;
 }
 footer .container {
 	max-width: 940px;
@@ -204,6 +234,7 @@ footer .container {
 	padding: 20px 0;
 }
 footer .logo {
+	display: block;
 	font-size: 34px;
 	line-height: 34px;
 	text-decoration: none;

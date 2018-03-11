@@ -1,0 +1,104 @@
+@media screen and (max-width: 980px) {
+	.header > .container,
+	.all,
+	article,
+	.footer article,
+	footer .container {
+		margin: 0 20px;
+	}
+	main .section {
+		width: 49%;
+	}
+	main .section:nth-child(3),
+	.footer .twitter {
+		margin-left: 0;
+	}
+	.all2 .portfolio,
+	.footer .section {
+		width: 47%;
+	}
+}
+@media screen and (max-width: 880px) {
+	.nav {
+		float: none;
+		text-align: center;
+	}
+	.logo,
+	footer .logo {
+		float: none;
+		background: none;
+		border: none;
+		text-align: center;
+		padding: 0;
+	}
+}
+@media screen and (max-width: 580px) {
+	footer .footer_copyright,
+	footer .footer_text {
+		float: none;
+		text-align: center;
+		padding: 10px 0 0 0;
+	}
+	.all img,
+	.all .text  {
+		float: none;
+		width: 100%;
+	}
+	.nav {
+		padding-top: 20px;
+		max-width: 400px;
+		margin: 0 auto;
+	}
+	.nav a {
+		width: 100px;
+	}
+}
+@media screen and (max-width: 490px) {
+	main .section {
+		width: 100%;
+		margin: -65px 0 65px 0;
+	}
+	.all2 .portfolio,
+	.footer .section {
+		width: 100%;
+		margin-left: 0;
+	}
+	.all2 #slider {
+		width: 100%;
+	}
+	.all2 .text {
+		width: 100%;
+		float: none;
+		padding-right: 0;
+	}
+	.icon {
+    	display: block;
+  	}
+   	.container .nav {
+		position: absolute;
+		display: block;
+		left: -100%;
+		background-color: rgba(0, 0, 0, 0.5);
+		max-width: 450px;
+		width: 100%;
+		padding-top: 0;
+		transition: all 1s ease-out;
+  	}
+  	.nav nav {
+  		display: block;
+  	}
+   	.nav a {
+	    display: block;
+	    text-align: center;
+	    border: none;
+  		border-bottom: 1px solid #e8e8e8;
+	    background: none;
+	    text-transform: uppercase;
+	   	padding: 0;
+	   	width: inherit;
+  	}
+  	.container .nav_state_open {
+	    position: relative;
+		left: 0; 
+	}
+}
